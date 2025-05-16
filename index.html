@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Website</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="bg-primary text-white text-center p-4">
+    <h1>Welcome to My Website</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">StudentSite</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="p-5 text-center bg-light">
+    <img src="images/profile.jpg" class="rounded-circle mb-3" alt="Profile" />
+    <h2>Hello!</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien nec nunc sagittis laoreet.</p>
+    <address>123 Campus Drive, College City, USA</address>
+  </section>
+
+  <section id="about" class="p-5 bg-secondary text-white">
+    <h2>About Me</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non magna sed nulla volutpat semper.</p>
+    <ul>
+      <li>The Matrix</li>
+      <li>Inception</li>
+      <li>The Great Gatsby</li>
+    </ul>
+    <ol>
+      <li>Gaming</li>
+      <li>Coding</li>
+      <li>Hiking</li>
+    </ol>
+    <p>Favorite Websites:</p>
+    <a href="https://www.github.com" class="btn btn-light btn-sm">GitHub</a>
+    <a href="https://www.w3schools.com" class="btn btn-light btn-sm">W3Schools</a>
+  </section>
+
+  <section id="portfolio" class="p-5">
+    <h2>Portfolio</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/project1.jpg" class="card-img-top" alt="Project" />
+          <div class="card-body">
+            <h5 class="card-title">Project One</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="carouselExample" class="carousel slide mt-4" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/carousel1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/carousel2.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <section id="contact" class="p-5 bg-light">
+    <h2>Contact Me</h2>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" required />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" required />
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <h3 class="mt-5">Weekly Schedule</h3>
+    <table class="table table-bordered table-striped mt-3">
+      <thead class="table-dark">
+        <tr><th>Day</th><th>Activity</th></tr>
+      </thead>
+      <tbody>
+        <tr class="table-primary"><td>Monday</td><td>CSCI Class</td></tr>
+        <tr class="table-info"><td>Tuesday</td><td>Work</td></tr>
+        <tr class="table-warning"><td>Wednesday</td><td>Gym</td></tr>
+        <tr class="table-success"><td>Thursday</td><td>Study Group</td></tr>
+        <tr class="table-danger"><td>Friday</td><td>Part-time Job</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer class="bg-dark text-white text-center p-3">
+    <p>&copy; 2025 My Personal Website</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
